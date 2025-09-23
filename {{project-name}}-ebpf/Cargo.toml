@@ -8,6 +8,9 @@ edition.workspace = true
 
 aya-ebpf = { workspace = true }
 aya-log-ebpf = { workspace = true }
+{% if use_network_types %}
+network-types = "0.1.0"
+{% endif %}
 
 [build-dependencies]
 which = { workspace = true }
