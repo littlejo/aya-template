@@ -31,7 +31,6 @@ default = "xdp"
 [conditional.'network_program_types.contains(program_type)'.placeholders.network_types_version]
 type = "string"
 prompt = "Which version of network-types to use (e.g. 0.1.0). Leave empty to not include."
-default = ""
 
 [conditional.'program_type == "classifier" || program_type == "xdp"'.placeholders.default_iface]
 type = "string"
