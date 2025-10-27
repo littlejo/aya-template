@@ -13,10 +13,10 @@ edition = "2024"
 
 [workspace.dependencies]
 {% if release == "stable" %}
-aya = { version = "0.1.1", default-features = false }
-aya-build = { version = "0.1.1", default-features = false }
+aya = { version = "0.13.1", default-features = false }
+aya-build = { version = "0.1.2", default-features = false }
 aya-ebpf = { version = "0.1.1", default-features = false }
-aya-log = { version = "0.1.1", default-features = false }
+aya-log = { version = "0.2.1", default-features = false }
 aya-log-ebpf = { version = "0.1.1", default-features = false }
 {% else %}
 aya = { git = "https://github.com/aya-rs/aya", default-features = false }
